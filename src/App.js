@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Login from './components/login';
 import FriendsList from './components/FriendsList';
+import AddFriend from './components/AddFriends';
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
       <Route path='/friends'>
         <FriendsList />
       </Route>
-      <Route>
-
+      <Route path='/friends/add'>
+        <AddFriend />
       </Route>
     </div>
   );
