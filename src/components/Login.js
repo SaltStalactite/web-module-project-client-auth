@@ -19,7 +19,7 @@ const Login = () => {
 
     const onSubmit = event => {
         event.preventDefault()
-        axios.post('http://localhost:5000/api/login', formValues)
+        axios.post('http://localhost:9000/api/login', formValues)
             .then(res => {
                 window.localStorage.setItem('token', res.data.payload)
                 push('/friends')
